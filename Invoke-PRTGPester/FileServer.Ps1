@@ -39,7 +39,7 @@ Describe "FileServer Configuration Tests" {
             @(Get-SmbShare workgroups -ErrorAction SilentlyContinue -CimSession $Session).Count | Should BeExactly 1
         }
 
-        It "Should have an Workgroups share" {
+        It "Should have an Home share" {
             @(Get-SmbShare Home -ErrorAction SilentlyContinue -CimSession $Session).Count | Should BeExactly 1
         }
 
