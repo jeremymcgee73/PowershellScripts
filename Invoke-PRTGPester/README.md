@@ -16,7 +16,7 @@ Exe Result: Write EXE result to disk. This is for logging, the output of the scr
 ![Alt text](Example.png?raw=true "Pester Example")
 
 ## PRTG Output
-![Alt text](PRTG-Example.png?raw=true "PRTG Example")
+![Alt text](PRTG-Example.PNG?raw=true "PRTG Example")
 
 ## TO DO
 I have thought about changing it so that I have folder for each server that I have tests on. Then using a PRTG environment variable to know which folder contains the needed Pester tests. This would be so you do not have to set the parameter.
