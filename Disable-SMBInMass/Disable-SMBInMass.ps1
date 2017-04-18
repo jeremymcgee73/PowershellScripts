@@ -14,5 +14,8 @@ Get-ADComputer -filter * -SearchBase "OU=Systems,DC=your,DC=domain" | ForEach-Ob
             Remove-WindowsFeature FS-SMB1 -ComputerName $HostName
         }
     }
+    elseif($OSversion -like "*2012*"){
+        Set-SmbServerConfiguration -EnableSMB1Protocol $false
+    }
     
 }
