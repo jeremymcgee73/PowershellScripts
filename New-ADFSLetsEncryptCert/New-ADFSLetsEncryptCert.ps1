@@ -1,4 +1,8 @@
 ﻿<#
+New-ADFSLetsEncryptCert is a script that creates a Let's Encrypt Cert for your ADFS server,
+and updates your ADFS and WAP server's to use the new cert. This could be modified to updates
+all of the servers in your farm.
+
 I am currently only use this for a proof of concept. I would test this thoroughly before
 using this in prod. It needs more error handling and alerting. Install the AWSpowerShell
 and ACMESharep modules first. If you aren't using Route53 you will have to change
