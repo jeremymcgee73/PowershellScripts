@@ -29,7 +29,7 @@ function Use-CNPoshLogging
             
         Add-LoggingTarget -Name Console -Configuration @{}
         Add-LoggingTarget -Name Gelf -Configuration @{
-                GelfServer = 'Graylog.sc.younglife.internal' 
+                GelfServer = 'Graylog' 
                 Port = 12201
                 Owner = $Owner
                 Path = $ScriptPath
